@@ -15,12 +15,12 @@
 .items{
     width: 700px;
     height: 400px;
+    position: relative;
 }
 
 .item{
     height: 100%;
     display: none;
-    position: relative;
 }
 
 .item img{
@@ -31,4 +31,27 @@
 
 .item.active{
     display: block;
+}
+
+.prev, .next{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 100;
+    margin: 10px 0;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.prev{
+    top: 0;
+}
+
+.next{
+    bottom: 0;
 }
